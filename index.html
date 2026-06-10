@@ -1,57 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Shahezad Sayyad Mohammad | IT Support Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shahezad Sayyad | Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<nav>
+<div class="brand">SS</div>
+<select id="lang">
+<option>English</option>
+<option>Hindi</option>
+<option>Marathi</option>
+<option>Arabic</option>
+</select>
+<button id="themeBtn">🌙 Theme</button>
+</nav>
+
 <header class="hero">
+<img src="profile.png" class="photo">
+<div>
 <h1>Shahezad Sayyad Mohammad</h1>
-<p>Senior IT Support Engineer | Microsoft 365 | Active Directory | Infrastructure Support</p>
-<a class="btn" href="https://linkedin.com/in/shahezad-sayyad-106a8a10b">LinkedIn</a>
+<h2 id="typing"></h2>
+<p>7+ Years • Microsoft 365 • Active Directory • ServiceNow • Windows Server</p>
+
+<div class="dropdown">
+<button class="dropbtn">Download Resume ▼</button>
+<div class="dropdown-content">
+<a href="Shahezad_Resume.pdf">Resume PDF</a>
+<a href="Shahezad_Resume_ATS.docx">Resume DOCX</a>
+</div>
+</div>
+</div>
 </header>
 
-<section>
-<h2>About</h2>
-<p>7+ years supporting enterprise environments across TCS, HCLTech, Capgemini, GXO Logistics and CTRLS Data Centre.</p>
+<section class="card">
+<h2>Professional Highlights</h2>
+<div class="stats">
+<div><h3>7+</h3><p>Years</p></div>
+<div><h3>5000+</h3><p>Users</p></div>
+<div><h3>98%+</h3><p>SLA</p></div>
+<div><h3>5</h3><p>Companies</p></div>
+</div>
 </section>
 
-<section>
-<h2>Core Skills</h2>
+<section class="card">
+<h2>Skills</h2>
+<div class="chips">
+<span>Microsoft 365</span><span>Exchange Online</span><span>Active Directory</span>
+<span>Entra ID</span><span>Windows Server</span><span>ServiceNow</span>
+<span>SCCM</span><span>Intune</span><span>VPN</span>
+</div>
+</section>
+
+<section class="card">
+<h2>Career Timeline</h2>
 <ul>
-<li>Microsoft 365</li>
-<li>Active Directory</li>
-<li>Windows Server</li>
-<li>ServiceNow</li>
-<li>Azure AD (Entra ID)</li>
-<li>SCCM / Intune</li>
+<li>TCS - IT Analyst</li>
+<li>HCLTech - Technical Support Specialist</li>
+<li>GXO Logistics - Technology Analyst</li>
+<li>Capgemini - Senior Analyst</li>
+<li>CTRLS Data Centre - Associate Engineer</li>
 </ul>
 </section>
 
-<section>
-<h2>Experience</h2>
-<h3>TCS (2025–Present)</h3>
-<p>L2 IT Support for 5000+ users.</p>
-<h3>HCLTech (2023–2024)</h3>
-<p>Technical Support Specialist.</p>
-<h3>Capgemini (2019–2022)</h3>
-<p>Senior Analyst – IT Support.</p>
+<section class="card">
+<h2>Contact</h2>
+<p>Email: shahezadsyed@gmail.com</p>
+<p>Phone: +91 7058009896</p>
+<p><a href="https://linkedin.com/in/shahezad-sayyad-106a8a10b">LinkedIn</a></p>
 </section>
 
-<section>
-<h2>Certifications</h2>
-<ul>
-<li>ITIL v3 & v4</li>
-<li>MS-900</li>
-<li>CompTIA A+</li>
-<li>CompTIA Network+</li>
-</ul>
-</section>
-
-<footer>
-<p>Contact: shahezadsyed@gmail.com</p>
-</footer>
+<script src="script.js"></script>
 </body>
 </html>

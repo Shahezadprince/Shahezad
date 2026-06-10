@@ -1,5 +1,14 @@
 
-body{font-family:Segoe UI,sans-serif;max-width:1100px;margin:auto;background:#f5f7fb;color:#222;padding:20px}
-.hero{text-align:center;padding:80px 20px;background:#0f172a;color:#fff;border-radius:12px}
-.btn{display:inline-block;background:#2563eb;color:white;padding:10px 18px;text-decoration:none;border-radius:8px}
-section{background:white;margin:20px 0;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+body{font-family:Arial;margin:0;background:#0f172a;color:white;transition:.3s}
+.light{background:#f5f5f5;color:#111}
+nav{display:flex;justify-content:space-between;padding:15px;background:#111827}
+.hero{display:flex;flex-wrap:wrap;gap:30px;align-items:center;padding:50px}
+.photo{width:240px;border-radius:20px}
+.card{margin:20px;padding:20px;background:#1f2937;border-radius:15px}
+.light .card{background:white}
+.stats{display:flex;gap:20px;flex-wrap:wrap}
+.stats div{padding:20px;background:#334155;border-radius:10px}
+.chips span{display:inline-block;margin:5px;padding:8px 12px;background:#334155;border-radius:20px}
+.dropdown-content{display:none;position:absolute;background:white}
+.dropdown:hover .dropdown-content{display:block}
+.dropdown-content a{display:block;padding:10px}
