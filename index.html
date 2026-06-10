@@ -1,442 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shahezad Sayyad | Senior IT Support Engineer & M365 Administrator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shahezad Sayyad | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="dark-theme">
+<body>
+<nav>
+<div class="brand">SS</div>
+<select id="lang">
+<option>English</option>
+<option>Hindi</option>
+<option>Marathi</option>
+<option>Arabic</option>
+</select>
+<button id="themeBtn">🌙 Theme</button>
+</nav>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <span class="brand-monogram">SS</span>
-                <div class="brand-text">
-                    <span class="brand-name">Shahezad Sayyad</span>
-                    <span class="brand-status"><span class="pulse-dot"></span> Available for Gulf & Remote Roles</span>
-                </div>
-            </div>
-            
-            <div class="nav-menu">
-                <a href="#overview" class="nav-link active">Overview</a>
-                <a href="#skills" class="nav-link">Skills Matrix</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#labs" class="nav-link">Architecture Labs</a>
-                <a href="#contact" class="nav-btn-primary">Connect</a>
-                <button id="theme-toggle" class="theme-switch" aria-label="Toggle Interface Theme">
-                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.22" x2="5.64" y2="17.78"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                </button>
-            </div>
-        </div>
-    </nav>
+<header class="hero">
+<img src="profile.png" class="photo">
+<div>
+<h1>Shahezad Sayyad Mohammad</h1>
+<h2 id="typing"></h2>
+<p>7+ Years • Microsoft 365 • Active Directory • ServiceNow • Windows Server</p>
 
-    <main class="main-wrapper">
-        <section id="overview" class="hero-section">
-            <div class="section-container grid-2-col">
-                <div class="hero-content">
-                    <div class="opportunity-badge">
-                        <span class="badge-pulse"></span>
-                        <span>Open to Opportunities | UAE • KSA • Qatar • Remote</span>
-                    </div>
-                    <h1 class="hero-title">Shahezad Sayyad <span class="text-gradient">Mohammad</span></h1>
-                    <h2 class="hero-subtitle">Senior IT Support Engineer & Microsoft 365 Administrator</h2>
-                    <p class="hero-description">
-                        Over 8 years of proven enterprise experience orchestrating L2 technical support, cloud directory administration, and global data center operations. Specializing in high-availability architecture updates, structural ITIL management, and infrastructure modernizations.
-                    </p>
-                    
-                    <div class="meta-tags">
-                        <span>Microsoft 365</span>
-                        <span>Active Directory</span>
-                        <span>ServiceNow ITSM</span>
-                        <span>Windows Server</span>
-                        <span>Intune MDM</span>
-                        <span>Entra ID</span>
-                    </div>
+<div class="dropdown">
+<button class="dropbtn">Download Resume ▼</button>
+<div class="dropdown-content">
+<a href="Shahezad_Resume.pdf">Resume PDF</a>
+<a href="Shahezad_Resume_ATS.docx">Resume DOCX</a>
+</div>
+</div>
+</div>
+</header>
 
-                    <div class="cta-group">
-                        <div class="dropdown-wrapper">
-                            <button class="btn-main dropdown-trigger">
-                                <span>📄 Download Resume</span>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a href="Shahezad_Resume.pdf" download class="dropdown-item">Executive PDF Profile</a>
-                                <a href="Shahezad_Resume_ATS.docx" download class="dropdown-item">ATS-Optimized Word Doc</a>
-                            </div>
-                        </div>
-                        <a href="https://linkedin.com/in/shahezad-sayyad-106a8a10b" target="_blank" rel="noopener" class="btn-secondary">
-                            <span>💼 LinkedIn Professional Hub</span>
-                        </a>
-                    </div>
-                </div>
+<section class="card">
+<h2>Professional Highlights</h2>
+<div class="stats">
+<div><h3>7+</h3><p>Years</p></div>
+<div><h3>5000+</h3><p>Users</p></div>
+<div><h3>98%+</h3><p>SLA</p></div>
+<div><h3>5</h3><p>Companies</p></div>
+</div>
+</section>
 
-                <div class="hero-visual">
-                    <div class="image-frame-container">
-                        <div class="glow-layer"></div>
-                        <div class="frame-border-element">
-                            <img src="profile.png" alt="Shahezad Sayyad Mohammad" class="profile-photo-render">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="card">
+<h2>Skills</h2>
+<div class="chips">
+<span>Microsoft 365</span><span>Exchange Online</span><span>Active Directory</span>
+<span>Entra ID</span><span>Windows Server</span><span>ServiceNow</span>
+<span>SCCM</span><span>Intune</span><span>VPN</span>
+</div>
+</section>
 
-        <section class="metrics-dashboard">
-            <div class="section-container metric-grid">
-                <div class="metric-card">
-                    <div class="metric-header">
-                        <span class="metric-icon-wrapper blue-glow">⚡</span>
-                        <span class="metric-trend positive">Active</span>
-                    </div>
-                    <div class="metric-value">8+</div>
-                    <div class="metric-label">Years Cross-Platform Experience</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-header">
-                        <span class="metric-icon-wrapper purple-glow">👥</span>
-                        <span class="metric-trend positive">Global Support</span>
-                    </div>
-                    <div class="metric-value">5,000+</div>
-                    <div class="metric-label">Enterprise Users Supported</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-header">
-                        <span class="metric-icon-wrapper cyan-glow">🎯</span>
-                        <span class="metric-trend positive">Exceeded</span>
-                    </div>
-                    <div class="metric-value">98%+</div>
-                    <div class="metric-label">SLA & OLA Compliance Metric</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-header">
-                        <span class="metric-icon-wrapper gold-glow">🏢</span>
-                        <span class="metric-trend clean">Enterprise</span>
-                    </div>
-                    <div class="metric-value">6</div>
-                    <div class="metric-label">Organizations Delivered Across</div>
-                </div>
-            </div>
-        </section>
+<section class="card">
+<h2>Career Timeline</h2>
+<ul>
+<li>TCS - IT Analyst</li>
+<li>HCLTech - Technical Support Specialist</li>
+<li>GXO Logistics - Technology Analyst</li>
+<li>Capgemini - Senior Analyst</li>
+<li>CTRLS Data Centre - Associate Engineer</li>
+</ul>
+</section>
 
-        <section id="skills" class="skills-matrix-section">
-            <div class="section-container">
-                <div class="section-header-centered">
-                    <h2 class="section-title-main">Technical Capabilities Architecture</h2>
-                    <p class="section-subtitle-main">Validated operational proficiencies mapped to global enterprise parameters</p>
-                </div>
+<section class="card">
+<h2>Contact</h2>
+<p>Email: shahezadsyed@gmail.com</p>
+<p>Phone: +91 7058009896</p>
+<p><a href="https://linkedin.com/in/shahezad-sayyad-106a8a10b">LinkedIn</a></p>
+</section>
 
-                <div class="skills-grid">
-                    <div class="capability-card">
-                        <div class="capability-card-header">
-                            <span class="capability-icon">☁️</span>
-                            <h3>Microsoft Cloud Technologies</h3>
-                        </div>
-                        <ul class="capability-list">
-                            <li><span>Microsoft 365 Enterprise Suite</span><div class="p-bar"><div class="p-fill" style="width: 95%"></div></div></li>
-                            <li><span>Exchange Online Infrastructure</span><div class="p-bar"><div class="p-fill" style="width: 90%"></div></div></li>
-                            <li><span>MS Teams Enterprise Ecosystem</span><div class="p-bar"><div class="p-fill" style="width: 95%"></div></div></li>
-                            <li><span>SharePoint Online Framework</span><div class="p-bar"><div class="p-fill" style="width: 85%"></div></div></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="capability-card">
-                        <div class="capability-card-header">
-                            <span class="capability-icon">🆔</span>
-                            <h3>Identity & Access Architecture</h3>
-                        </div>
-                        <ul class="capability-list">
-                            <li><span>Active Directory Domain Services</span><div class="p-bar"><div class="p-fill" style="width: 95%"></div></div></li>
-                            <li><span>Microsoft Entra ID (Azure AD)</span><div class="p-bar"><div class="p-fill" style="width: 90%"></div></div></li>
-                            <li><span>Hybrid Identity & Sync Engine</span><div class="p-bar"><div class="p-fill" style="width: 85%"></div></div></li>
-                            <li><span>MFA, SSO & Conditional Access</span><div class="p-bar"><div class="p-fill" style="width: 90%"></div></div></li>
-                        </ul>
-                    </div>
-
-                    <div class="capability-card">
-                        <div class="capability-card-header">
-                            <span class="capability-icon">⚙️</span>
-                            <h3>Enterprise Infrastructure & EUC</h3>
-                        </div>
-                        <ul class="capability-list">
-                            <li><span>Windows Server 2012 / 2016 / 2019</span><div class="p-bar"><div class="p-fill" style="width: 90%"></div></div></li>
-                            <li><span>Microsoft Intune (Endpoint Manager)</span><div class="p-bar"><div class="p-fill" style="width: 80%"></div></div></li>
-                            <li><span>SCCM Configuration Management</span><div class="p-bar"><div class="p-fill" style="width: 80%"></div></div></li>
-                            <li><span>Group Policy (GPO) Architecture</span><div class="p-bar"><div class="p-fill" style="width: 95%"></div></div></li>
-                        </ul>
-                    </div>
-
-                    <div class="capability-card">
-                        <div class="capability-card-header">
-                            <span class="capability-icon">💼</span>
-                            <h3>ITSM & Operations Management</h3>
-                        </div>
-                        <ul class="capability-list">
-                            <li><span>ServiceNow Premium Platform</span><div class="p-bar"><div class="p-fill" style="width: 95%"></div></div></li>
-                            <li><span>ITIL Framework Protocols</span><div class="p-bar"><div class="p-fill" style="width: 90%"></div></div></li>
-                            <li><span>Incident, Problem & Change Lifecycle</span><div class="p-bar"><div class="p-fill" style="width: 95%"></div></div></li>
-                            <li><span>Root Cause Analysis (RCA) Engine</span><div class="p-bar"><div class="p-fill" style="width: 90%"></div></div></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="timeline-section">
-            <div class="section-container">
-                <div class="section-header-left">
-                    <h2 class="section-title-main">Professional Milestones</h2>
-                    <p class="section-subtitle-main">An established chronology of delivering operational excellence across enterprise environments</p>
-                </div>
-
-                <div class="corporate-timeline">
-                    <div class="timeline-node">
-                        <div class="node-marker"></div>
-                        <div class="node-meta">
-                            <span class="node-duration">2025 – Present</span>
-                            <h3 class="node-company">Tata Consultancy Services</h3>
-                            <h4 class="node-designation">IT Analyst — Senior Infrastructure Specialist</h4>
-                        </div>
-                        <div class="node-body">
-                            <p>Orchestrate high-tier operational support matrices for a global user base exceeding 5,000 corporate seats, keeping SLA criteria above 98%.</p>
-                            <ul>
-                                <li>Act as the definitive engineering escalation vector for highly complex environment disruptions across Microsoft 365, core directory systems, and tenant platforms.</li>
-                                <li>Perform advanced environment diagnosis to lower systemic recurring workflow blockages by approximately 20%.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-node">
-                        <div class="node-marker"></div>
-                        <div class="node-meta">
-                            <span class="node-duration">2023 – 2024</span>
-                            <h3 class="node-company">HCLTech</h3>
-                            <h4 class="node-designation">Technical Support Specialist — L2 Infrastructure</h4>
-                        </div>
-                        <div class="node-body">
-                            <p>Administered core network elements and hybrid cloud configurations for enterprise infrastructure hosting over 10,000 endpoints.</p>
-                            <ul>
-                                <li>Optimized domain-wide directory security frameworks using advanced Group Policy Object (GPO) restructuring.</li>
-                                <li>Controlled incoming task ticket volumes within ServiceNow, decreasing persistent backlogs by 30%.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-node">
-                        <div class="node-marker"></div>
-                        <div class="node-meta">
-                            <span class="node-duration">2022</span>
-                            <h3 class="node-company">GXO Logistics</h3>
-                            <h4 class="node-designation">Technology Analyst — APAC Infrastructure Support</h4>
-                        </div>
-                        <div class="node-body">
-                            <p>Managed remote enterprise infrastructure arrays across major APAC logistics hubs (Singapore, Thailand, China), protecting service availability parameters.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-node">
-                        <div class="node-marker"></div>
-                        <div class="node-meta">
-                            <span class="node-duration">2019 – 2022</span>
-                            <h3 class="node-company">Capgemini</h3>
-                            <h4 class="node-designation">Senior Analyst — IT Support & Infrastructure Services</h4>
-                        </div>
-                        <div class="node-body">
-                            <p>Supervised comprehensive asset lifecycles and physical workspace deployments for global units operating inside EMEA and APAC markets.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-node">
-                        <div class="node-marker"></div>
-                        <div class="node-meta">
-                            <span class="node-duration">2018 – 2019</span>
-                            <h3 class="node-company">CTRLS Data Centre</h3>
-                            <h4 class="node-designation">Associate Engineer — Tier III Data Centre Operations</h4>
-                        </div>
-                        <div class="node-body">
-                            <p>Maintained physical hardware arrays, enterprise storage networks (SAN/NAS), and environmental telecommunications matrices inside top-tier facility spaces.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-node">
-                        <div class="node-marker"></div>
-                        <div class="node-meta">
-                            <span class="node-duration">2017 – 2018</span>
-                            <h3 class="node-company">Reliance ResQ</h3>
-                            <h4 class="node-designation">Security Systems Engineer</h4>
-                        </div>
-                        <div class="node-body">
-                            <p>Deployed and maintained mission-critical physical security systems, access arrays, and biometric authentication matrix nodes across diverse facilities.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="credentials-section">
-            <div class="section-container">
-                <div class="section-header-centered">
-                    <h2 class="section-title-main">Professional Validations</h2>
-                    <p class="section-subtitle-main">Industry-standard engineering verifications issued by global tech providers</p>
-                </div>
-                
-                <div class="credentials-badge-flex">
-                    <div class="credential-badge-card">
-                        <div class="cred-icon-box m365-blue">M365</div>
-                        <div class="cred-details">
-                            <h4>Microsoft 365 Certified</h4>
-                            <p>Fundamentals (MS-900)</p>
-                        </div>
-                    </div>
-                    <div class="credential-badge-card">
-                        <div class="cred-icon-box itil-purple">ITIL</div>
-                        <div class="cred-details">
-                            <h4>ITIL v3 & v4 Foundation</h4>
-                            <p>IT Service Management</p>
-                        </div>
-                    </div>
-                    <div class="credential-badge-card">
-                        <div class="cred-icon-box comptia-cyan">A+</div>
-                        <div class="cred-details">
-                            <h4>CompTIA A+</h4>
-                            <p>Core Infrastructure Engineer</p>
-                        </div>
-                    </div>
-                    <div class="credential-badge-card">
-                        <div class="cred-icon-box comptia-blue">N+</div>
-                        <div class="cred-details">
-                            <h4>CompTIA Network+</h4>
-                            <p>Infrastructure Networking</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="labs" class="labs-portfolio-section">
-            <div class="section-container">
-                <div class="section-header-centered">
-                    <h2 class="section-title-main">Production Sandboxes & Labs</h2>
-                    <p class="section-subtitle-main">Functional environments engineered to simulate deep enterprise architecture scenarios</p>
-                </div>
-
-                <div class="labs-grid-display">
-                    <div class="lab-card-component">
-                        <div class="lab-tag-meta">Enterprise Identity</div>
-                        <h3 class="lab-card-title">Active Directory User Lifecycle Management Lab</h3>
-                        <p class="lab-card-text">Engineered a complete hybrid account staging process using PowerShell scripting. Automates user account creation, security group provisioning, and structural asset tracking.</p>
-                        <div class="lab-tech-stack-row">
-                            <span>AD DS</span><span>PowerShell</span><span>RBAC</span>
-                        </div>
-                    </div>
-
-                    <div class="lab-card-component">
-                        <div class="lab-tag-meta">Cloud Productivity</div>
-                        <h3 class="lab-card-title">Microsoft 365 Tenant Administration Sandbox</h3>
-                        <p class="lab-card-text">Engineered custom messaging controls, shared resource configurations, dynamic group governance, and data retention policies inside a multi-tier testing tenant environment.</p>
-                        <div class="lab-tech-stack-row">
-                            <span>Exchange Online</span><span>M365 Admin Center</span><span>Compliance</span>
-                        </div>
-                    </div>
-
-                    <div class="lab-card-component">
-                        <div class="lab-tag-meta">System Governance</div>
-                        <h3 class="lab-card-title">Windows Server GPO Security Hardening Studio</h3>
-                        <p class="lab-card-text">Created and tested strict Group Policy objects aligned with CIS benchmarks, including secure firewall structures, desktop locks, and software restriction rules.</p>
-                        <div class="lab-tech-stack-row">
-                            <span>Windows Server 2019</span><span>GPO</span><span>CIS Security</span>
-                        </div>
-                    </div>
-
-                    <div class="lab-card-component">
-                        <div class="lab-tag-meta">ITIL Operations</div>
-                        <h3 class="lab-card-title">ServiceNow Incident Workflow Automation Studio</h3>
-                        <p class="lab-card-text">Configured complete custom incident handling states, SLA notifications, automatic problem assignment routing, and client notification loops within a personal PDI.</p>
-                        <div class="lab-tech-stack-row">
-                            <span>ServiceNow PDI</span><span>ITSM</span><span>SLA Automation</span>
-                        </div>
-                    </div>
-
-                    <div class="lab-card-component">
-                        <div class="lab-tag-meta">Endpoint Governance</div>
-                        <h3 class="lab-card-title">Microsoft Intune MDM Profile Optimization Array</h3>
-                        <p class="lab-card-text">Built zero-touch deployment profiles, automatic enrollment rules, and application packaging configurations across diverse Windows and Android enterprise systems.</p>
-                        <div class="lab-tech-stack-row">
-                            <span>Intune MDM</span><span>Autopilot</span><span>Endpoint Protection</span>
-                        </div>
-                    </div>
-
-                    <div class="lab-card-component">
-                        <div class="lab-tag-meta">Cloud Protection</div>
-                        <h3 class="lab-card-title">Microsoft Entra ID Access Management Workspace</h3>
-                        <p class="lab-card-text">Configured modern cloud access parameters, incorporating conditional location checks, step-up MFA rules, and automated identity status updates.</p>
-                        <div class="lab-tech-stack-row">
-                            <span>Entra ID</span><span>Conditional Access</span><span>SSO / MFA</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="recruitment-hub-section">
-            <div class="section-container">
-                <div class="glass-action-panel">
-                    <div class="action-panel-narrative">
-                        <h2>Initiate Technical Review</h2>
-                        <p>Currently open to discussions regarding local or hybrid placements inside primary Gulf hubs (Dubai, Abu Dhabi, Riyadh, Doha) along with international remote engineering roles.</p>
-                    </div>
-                    
-                    <div class="action-panel-grid">
-                        <a href="mailto:shahezadsyed@gmail.com" class="action-channel-card">
-                            <span class="channel-icon-indicator">📧</span>
-                            <div class="channel-details-block">
-                                <span class="channel-label">Corporate Communication Line</span>
-                                <span class="channel-data-string">shahezadsyed@gmail.com</span>
-                            </div>
-                        </a>
-
-                        <a href="https://linkedin.com/in/shahezad-sayyad-106a8a10b" target="_blank" rel="noopener" class="action-channel-card">
-                            <span class="channel-icon-indicator">💼</span>
-                            <div class="channel-details-block">
-                                <span class="channel-label">LinkedIn Networking Gateway</span>
-                                <span class="channel-data-string">linkedin.com/in/shahezad-sayyad</span>
-                            </div>
-                        </a>
-
-                        <div class="action-channel-card dropdown-trigger-alt">
-                            <span class="channel-icon-indicator">📄</span>
-                            <div class="channel-details-block">
-                                <span class="channel-label">Download Verified Dossier</span>
-                                <span class="channel-data-string">Get PDF or ATS Word Copy</span>
-                            </div>
-                            <div class="alt-dropdown-float">
-                                <a href="Shahezad_Resume.pdf" download>Verified PDF Resume</a>
-                                <a href="Shahezad_Resume_ATS.docx" download>ATS-Compliant DOCX</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="system-footer">
-        <div class="section-container footer-flex-layout">
-            <div class="footer-corporate-info">
-                <span class="footer-brand-title">Shahezad Sayyad Mohammad</span>
-                <p>Senior Infrastructure Support Specialist & M365 Admin</p>
-            </div>
-            <div class="footer-availability-statement">
-                <p>Available for Remote, Hybrid & Onsite Opportunities</p>
-                <p class="timestamp-tracking">System Status Online • Profile Live © 2026 All Rights Reserved</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
