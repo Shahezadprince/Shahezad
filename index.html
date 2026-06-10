@@ -1,97 +1,499 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shahezad Sayyad | Senior IT Support Engineer</title>
-<link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shahezad Sayyad Mohammad – Senior IT Support Engineer & Microsoft 365 Administrator with 8+ years of enterprise IT experience across global organizations.">
+  <meta name="keywords" content="IT Support Engineer, Microsoft 365 Administrator, Active Directory, ServiceNow, Nagpur, UAE, Remote IT, Infrastructure Engineer">
+  <meta name="author" content="Shahezad Sayyad Mohammad">
+  <meta property="og:title" content="Shahezad Sayyad Mohammad | Senior IT Support Engineer">
+  <meta property="og:description" content="8+ years in IT Support, Microsoft 365, Active Directory, ServiceNow & EUC Engineering.">
+  <meta property="og:type" content="website">
+  <title>Shahezad Sayyad Mohammad | Senior IT Support Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="nav">
-<div class="logo">SS</div>
-<button id="themeBtn">🌙 Theme</button>
-</nav>
 
-<header class="hero">
-<div class="hero-text">
-<span class="badge">🟢 Open to Opportunities</span>
-<h1>Shahezad Sayyad Mohammad</h1>
-<h2>Senior IT Support Engineer | Microsoft 365 Administrator</h2>
-<p>Microsoft 365 • Active Directory • ServiceNow • Windows Server</p>
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#about" class="nav-logo">SS</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle light/dark theme">
+          <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
+        <button id="hamburger" class="hamburger" aria-label="Open navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-<div class="actions">
-<div class="dropdown">
-<button class="btn">📄 Download Resume</button>
-<div class="menu">
-<a href="Shahezad_Resume.pdf">PDF Resume</a>
-<a href="Shahezad_Resume_ATS.docx">ATS Resume DOCX</a>
-</div>
-</div>
-<a class="btn" href="https://linkedin.com/in/shahezad-sayyad-106a8a10b" target="_blank">💼 LinkedIn</a>
-<a class="btn" href="mailto:shahezadsyed@gmail.com">📧 Contact</a>
-</div>
-</div>
-<img src="profile.png" class="photo">
-</header>
+  <!-- ===== HERO ===== -->
+  <section id="about" class="hero">
+    <!-- Background decorations -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="orb orb-blue"></div>
+      <div class="orb orb-purple"></div>
+      <div class="orb orb-cyan"></div>
+      <div class="grid-dots"></div>
+    </div>
 
-<section class="card stats">
-<div><h3>8+</h3><p>Years Experience</p></div>
-<div><h3>5000+</h3><p>Users Supported</p></div>
-<div><h3>98%+</h3><p>SLA Compliance</p></div>
-<div><h3>6</h3><p>Organizations</p></div>
-</section>
+    <div class="container">
+      <div class="hero-layout">
 
-<section class="card">
-<h2>Technical Skills</h2>
-<div class="chips">
-<span>Microsoft 365</span><span>Exchange Online</span><span>Teams</span><span>SharePoint</span>
-<span>Active Directory</span><span>Entra ID</span><span>Windows Server</span>
-<span>ServiceNow</span><span>SCCM</span><span>Intune</span>
-</div>
-</section>
+        <!-- Text side -->
+        <div class="hero-text" data-animate>
+          <div class="availability-pill">
+            <span class="live-dot"></span>
+            Open to Opportunities
+          </div>
 
-<section class="card">
-<h2>Professional Experience</h2>
-<ul class="timeline">
-<li><b>TCS</b> — IT Analyst (2025–Present)</li>
-<li><b>HCLTech</b> — Technical Support Specialist (2023–2024)</li>
-<li><b>GXO Logistics</b> — Technology Analyst (2022)</li>
-<li><b>Capgemini</b> — Senior Analyst (2019–2022)</li>
-<li><b>CTRLS Data Centre</b> — Associate Engineer (2018–2019)</li>
-<li><b>Reliance ResQ</b> — Security Systems Engineer (2017–2018)</li>
-</ul>
-</section>
+          <h1 class="hero-name">
+            Shahezad Sayyad<br>
+            <span class="gradient-word">Mohammad</span>
+          </h1>
 
-<section class="card">
-<h2>Certifications</h2>
-<div class="certs">
-<div>ITIL v3 & v4</div>
-<div>MS-900</div>
-<div>CompTIA A+</div>
-<div>CompTIA Network+</div>
-</div>
-</section>
+          <h2 class="hero-title">
+            Senior IT Support Engineer<br>
+            <span class="title-sub">Microsoft 365 Administrator</span>
+          </h2>
 
-<section class="card">
-<h2>Projects & Labs</h2>
-<ul>
-<li>Active Directory User Management Lab</li>
-<li>Microsoft 365 Administration Lab</li>
-<li>Windows Server GPO Management Lab</li>
-<li>ServiceNow Incident Workflow</li>
-</ul>
-</section>
+          <div class="hero-tags">
+            <span>Microsoft 365</span>
+            <span>Active Directory</span>
+            <span>ServiceNow</span>
+            <span>Windows Server</span>
+            <span>Intune</span>
+            <span>Entra ID</span>
+          </div>
 
-<footer>
-<p>Made by Shahezad</p>
-<p>Available for Remote, Hybrid & Onsite Opportunities</p>
-<p>© 2026 All Rights Reserved</p>
-</footer>
+          <div class="hero-ctas">
+            <div class="resume-dropdown" id="resumeDropdown">
+              <button class="btn-grad" id="resumeToggle">
+                <i class="fas fa-download"></i>
+                Download Resume
+                <i class="fas fa-chevron-down chev" id="chevron"></i>
+              </button>
+              <div class="rdrop-menu" id="rdropMenu">
+                <a href="Shahezad_Resume.pdf" download>
+                  <i class="fas fa-file-pdf"></i> PDF Resume
+                </a>
+                <a href="Shahezad_Resume_ATS.docx" download>
+                  <i class="fas fa-file-word"></i> ATS Resume (DOCX)
+                </a>
+              </div>
+            </div>
+            <a href="https://www.linkedin.com/in/shahezad-syed-106a8a10b" target="_blank" rel="noopener" class="btn-outline">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="#contact" class="btn-ghost">
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+          </div>
+        </div>
 
-<script>
-const b=document.getElementById('themeBtn');
-b.onclick=()=>{
- document.body.classList.toggle('light');
- localStorage.theme=document.body.classList.contains('light')?'light':'dark';
-};
-if(localStorage.theme==='light') document.body.classList.add('light');
-</script>
-</body></html>
+        <!-- Photo side -->
+        <div class="hero-photo" data-animate>
+          <div class="photo-wrap">
+            <div class="photo-ring"></div>
+            <div class="photo-glow"></div>
+            <img src="profile.png" alt="Shahezad Sayyad Mohammad – Senior IT Support Engineer" loading="eager">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card" data-animate>
+          <i class="fas fa-calendar-check stat-ico"></i>
+          <div class="stat-num gradient-txt" data-target="8" data-suffix="+">8+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card" data-animate>
+          <i class="fas fa-users stat-ico"></i>
+          <div class="stat-num gradient-txt" data-target="5000" data-suffix="+">5000+</div>
+          <div class="stat-label">Users Supported</div>
+        </div>
+        <div class="stat-card" data-animate>
+          <i class="fas fa-chart-line stat-ico"></i>
+          <div class="stat-num gradient-txt" data-target="98" data-suffix="%+">98%+</div>
+          <div class="stat-label">SLA Compliance</div>
+        </div>
+        <div class="stat-card" data-animate>
+          <i class="fas fa-building stat-ico"></i>
+          <div class="stat-num gradient-txt" data-target="6" data-suffix="">6</div>
+          <div class="stat-label">Organizations</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="sec-header" data-animate>
+        <span class="sec-label">Expertise</span>
+        <h2 class="sec-title">Technical Skills</h2>
+        <p class="sec-desc">Specialized across the Microsoft ecosystem, enterprise infrastructure, and global IT operations</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-animate>
+          <div class="sk-head">
+            <div class="sk-icon blue-ic"><i class="fab fa-microsoft"></i></div>
+            <h3>Microsoft Technologies</h3>
+          </div>
+          <div class="sk-pills">
+            <span class="spill blue">Microsoft 365</span>
+            <span class="spill blue">Exchange Online</span>
+            <span class="spill blue">Microsoft Teams</span>
+            <span class="spill blue">SharePoint Online</span>
+            <span class="spill blue">OneDrive for Business</span>
+          </div>
+        </div>
+        <div class="skill-card" data-animate>
+          <div class="sk-head">
+            <div class="sk-icon purple-ic"><i class="fas fa-shield-halved"></i></div>
+            <h3>Identity & Security</h3>
+          </div>
+          <div class="sk-pills">
+            <span class="spill purple">Active Directory</span>
+            <span class="spill purple">Entra ID (Azure AD)</span>
+            <span class="spill purple">MFA & Conditional Access</span>
+            <span class="spill purple">Group Policy (GPO)</span>
+            <span class="spill purple">SSPR</span>
+          </div>
+        </div>
+        <div class="skill-card" data-animate>
+          <div class="sk-head">
+            <div class="sk-icon cyan-ic"><i class="fas fa-server"></i></div>
+            <h3>Infrastructure</h3>
+          </div>
+          <div class="sk-pills">
+            <span class="spill cyan">Windows Server 2012–2022</span>
+            <span class="spill cyan">SCCM / ConfigMgr</span>
+            <span class="spill cyan">Intune MDM/MAM</span>
+            <span class="spill cyan">DHCP & DNS</span>
+            <span class="spill cyan">Hyper-V</span>
+          </div>
+        </div>
+        <div class="skill-card" data-animate>
+          <div class="sk-head">
+            <div class="sk-icon green-ic"><i class="fas fa-headset"></i></div>
+            <h3>ITSM & Operations</h3>
+          </div>
+          <div class="sk-pills">
+            <span class="spill green">ServiceNow ITSM</span>
+            <span class="spill green">ITIL v3 & v4</span>
+            <span class="spill green">Incident & Change Mgmt</span>
+            <span class="spill green">SLA / OLA Management</span>
+            <span class="spill green">EUC Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section section-dim">
+    <div class="container">
+      <div class="sec-header" data-animate>
+        <span class="sec-label">Career</span>
+        <h2 class="sec-title">Professional Experience</h2>
+        <p class="sec-desc">Eight years of progressive IT leadership across six global enterprises</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item" data-animate>
+          <div class="tl-side">
+            <div class="tl-dot active-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card current-card">
+            <div class="tl-top">
+              <div>
+                <span class="tl-badge active-badge">Current</span>
+                <h3 class="tl-company">Tata Consultancy Services (TCS)</h3>
+                <p class="tl-role">IT Analyst C2</p>
+              </div>
+              <span class="tl-date">Jan 2025 – Present</span>
+            </div>
+            <p class="tl-desc">Enterprise-scale IT support, Microsoft 365 tenant administration, Active Directory lifecycle management, Intune device enrollment, and EUC engineering for global clients.</p>
+            <div class="tl-tags"><span>Microsoft 365</span><span>Active Directory</span><span>ServiceNow</span><span>Intune</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-animate>
+          <div class="tl-side">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-company">HCLTech</h3>
+                <p class="tl-role">Technical Support Specialist — Specialist E2</p>
+              </div>
+              <span class="tl-date">Jan 2023 – Jun 2024</span>
+            </div>
+            <p class="tl-desc">Provided L2 technical support to 2,000+ international users across global locations, managing multilingual requests and maintaining high customer satisfaction on hardware and software issues.</p>
+            <div class="tl-tags"><span>L2 Support</span><span>Remote Support</span><span>Exchange Online</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-animate>
+          <div class="tl-side">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-company">GXO Logistics</h3>
+                <p class="tl-role">Technology Analyst</p>
+              </div>
+              <span class="tl-date">Apr 2022 – Sep 2022</span>
+            </div>
+            <p class="tl-desc">Remote support for users across Singapore, Thailand, and China. Managed ServiceNow incidents, acted as escalation point, and delivered system setup and software deployments across SEA region.</p>
+            <div class="tl-tags"><span>ServiceNow</span><span>SEA Region</span><span>Remote Support</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-animate>
+          <div class="tl-side">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-company">Capgemini</h3>
+                <p class="tl-role">Senior Analyst</p>
+              </div>
+              <span class="tl-date">Dec 2019 – Apr 2022</span>
+            </div>
+            <p class="tl-desc">PC lifecycle management, depot repair approvals, new-hire onboarding, ITSM queue ownership, SLA/OLA compliance, and team coordination for IT operations across domestic and international customers.</p>
+            <div class="tl-tags"><span>Team Lead</span><span>ITSM</span><span>Asset Management</span><span>SLA/OLA</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-animate>
+          <div class="tl-side">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-company">CTRLS Data Centre</h3>
+                <p class="tl-role">DC Operations Engineer</p>
+              </div>
+              <span class="tl-date">Oct 2018 – Nov 2019</span>
+            </div>
+            <p class="tl-desc">Installed, extracted, and relocated servers, storage, and network hardware across multiple data center facilities. Remote support via BMC Remedy and hands-on DC floor operations.</p>
+            <div class="tl-tags"><span>Data Centre</span><span>Server Hardware</span><span>BMC Remedy</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-animate>
+          <div class="tl-side">
+            <div class="tl-dot"></div>
+            <!-- No line on last item -->
+          </div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-company">Reliance ResQ</h3>
+                <p class="tl-role">Security Systems Engineer</p>
+              </div>
+              <span class="tl-date">Jul 2017 – Jul 2018</span>
+            </div>
+            <p class="tl-desc">Deployed and maintained biometric systems, access control, PA systems, fire alarms, and CCTV infrastructure across client sites.</p>
+            <div class="tl-tags"><span>CCTV</span><span>Access Control</span><span>Fire Alarm</span><span>Biometrics</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="sec-header" data-animate>
+        <span class="sec-label">Credentials</span>
+        <h2 class="sec-title">Certifications</h2>
+        <p class="sec-desc">Industry-validated expertise across IT service management and Microsoft technologies</p>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card" data-animate>
+          <div class="cert-ico blue-ic"><i class="fas fa-cog"></i></div>
+          <h3>ITIL v3</h3>
+          <p>IT Service Management</p>
+          <span class="cert-tag blue-tag">Foundation</span>
+        </div>
+        <div class="cert-card" data-animate>
+          <div class="cert-ico purple-ic"><i class="fas fa-infinity"></i></div>
+          <h3>ITIL v4</h3>
+          <p>IT Service Management</p>
+          <span class="cert-tag purple-tag">Foundation</span>
+        </div>
+        <div class="cert-card" data-animate>
+          <div class="cert-ico msblue-ic"><i class="fab fa-microsoft"></i></div>
+          <h3>MS-900</h3>
+          <p>Microsoft 365 Fundamentals</p>
+          <span class="cert-tag msblue-tag">Microsoft</span>
+        </div>
+        <div class="cert-card" data-animate>
+          <div class="cert-ico red-ic"><i class="fas fa-laptop"></i></div>
+          <h3>CompTIA A+</h3>
+          <p>IT Hardware & Software</p>
+          <span class="cert-tag red-tag">CompTIA</span>
+        </div>
+        <div class="cert-card" data-animate>
+          <div class="cert-ico orange-ic"><i class="fas fa-network-wired"></i></div>
+          <h3>CompTIA Network+</h3>
+          <p>Networking Fundamentals</p>
+          <span class="cert-tag orange-tag">CompTIA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section section-dim">
+    <div class="container">
+      <div class="sec-header" data-animate>
+        <span class="sec-label">Labs</span>
+        <h2 class="sec-title">Projects & Labs</h2>
+        <p class="sec-desc">Hands-on engineering implementations that demonstrate real-world IT capability</p>
+      </div>
+      <div class="projects-grid">
+        <div class="proj-card" data-animate>
+          <div class="proj-ico blue-ic"><i class="fas fa-users-cog"></i></div>
+          <h3>Active Directory User Lifecycle</h3>
+          <p>Full AD lifecycle management covering OU design, user provisioning, Group Policy enforcement, and automated deprovisioning workflows.</p>
+          <div class="proj-tech"><span>Windows Server</span><span>Active Directory</span><span>GPO</span></div>
+        </div>
+        <div class="proj-card" data-animate>
+          <div class="proj-ico purple-ic"><i class="fab fa-microsoft"></i></div>
+          <h3>Microsoft 365 Administration Lab</h3>
+          <p>Full M365 tenant management: Exchange Online mail flow rules, Teams policies, SharePoint permissions, licensing models, and compliance configurations.</p>
+          <div class="proj-tech"><span>Microsoft 365</span><span>Exchange Online</span><span>Teams Admin</span></div>
+        </div>
+        <div class="proj-card" data-animate>
+          <div class="proj-ico cyan-ic"><i class="fas fa-server"></i></div>
+          <h3>Windows Server GPO Management</h3>
+          <p>Designed and tested Group Policy Objects for security baselines, software deployment, drive mapping, and desktop lockdown across multi-OU environments.</p>
+          <div class="proj-tech"><span>Windows Server</span><span>GPO</span><span>Security Baseline</span></div>
+        </div>
+        <div class="proj-card" data-animate>
+          <div class="proj-ico green-ic"><i class="fas fa-ticket-alt"></i></div>
+          <h3>ServiceNow Incident Workflow Lab</h3>
+          <p>Configured ServiceNow ITSM with custom categories, routing rules, SLA timers, escalation paths, and executive dashboard reporting for L1/L2 teams.</p>
+          <div class="proj-tech"><span>ServiceNow</span><span>ITSM</span><span>ITIL v4</span></div>
+        </div>
+        <div class="proj-card" data-animate>
+          <div class="proj-ico orange-ic"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Intune Device Management Lab</h3>
+          <p>Enrolled Windows and mobile devices into Intune MDM, configured compliance policies, app protection policies, and Conditional Access enforcement.</p>
+          <div class="proj-tech"><span>Intune</span><span>MDM/MAM</span><span>Entra ID</span></div>
+        </div>
+        <div class="proj-card" data-animate>
+          <div class="proj-ico red-ic"><i class="fas fa-id-badge"></i></div>
+          <h3>Entra ID Administration Lab</h3>
+          <p>Configured Entra ID tenant management including user/group administration, SSPR, MFA enrollment campaigns, Conditional Access policies, and PIM setup.</p>
+          <div class="proj-tech"><span>Entra ID</span><span>MFA</span><span>Conditional Access</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="sec-header" data-animate>
+        <span class="sec-label">Get in Touch</span>
+        <h2 class="sec-title">Contact</h2>
+        <p class="sec-desc">Available for Remote, Hybrid & Onsite opportunities across UAE, Saudi Arabia, Qatar & India</p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:shahezadsyed@gmail.com" class="contact-card" data-animate>
+          <div class="cc-ico blue-ic"><i class="fas fa-envelope"></i></div>
+          <h3>Email Me</h3>
+          <p>shahezadsyed@gmail.com</p>
+          <span class="cc-cta">Send Email <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="https://www.linkedin.com/in/shahezad-syed-106a8a10b" target="_blank" rel="noopener" class="contact-card" data-animate>
+          <div class="cc-ico linkedin-ic"><i class="fab fa-linkedin-in"></i></div>
+          <h3>LinkedIn Profile</h3>
+          <p>Connect & view full profile</p>
+          <span class="cc-cta">View Profile <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <div class="contact-card" data-animate>
+          <div class="cc-ico purple-ic"><i class="fas fa-file-arrow-down"></i></div>
+          <h3>Download Resume</h3>
+          <p>PDF or ATS-optimised DOCX</p>
+          <div class="dl-btns">
+            <a href="Shahezad_Resume.pdf" download class="dl-btn">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+            <a href="Shahezad_Resume_ATS.docx" download class="dl-btn">
+              <i class="fas fa-file-word"></i> DOCX
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-body">
+        <div class="foot-logo">SS</div>
+        <div class="foot-info">
+          <p class="foot-name">Shahezad Sayyad Mohammad</p>
+          <p class="foot-title">Senior IT Support Engineer · Microsoft 365 Administrator</p>
+          <p class="foot-status">
+            <span class="live-dot small"></span>
+            Available for Remote, Hybrid & Onsite Opportunities
+          </p>
+        </div>
+        <div class="foot-links">
+          <a href="mailto:shahezadsyed@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/shahezad-syed-106a8a10b" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        Made with <span class="heart">♥</span> by Shahezad &nbsp;·&nbsp; © 2026 All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
