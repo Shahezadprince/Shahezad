@@ -185,12 +185,26 @@
     });
   });
 
-})();
-fetch('https://api.countapi.xyz/hit/shahezad-portfolio/visits')
+
+/* ----------------------------------------------------------
+   VISITOR COUNTER
+---------------------------------------------------------- */
+
+fetch('https://api.countapi.xyz/hit/shahezadprince-portfolio/visits')
   .then(response => response.json())
   .then(data => {
-    document.getElementById('visitor-count').innerText = data.value;
+    const counter = document.getElementById('visitor-count');
+
+    if(counter){
+      counter.textContent = data.value;
+    }
   })
   .catch(() => {
-    document.getElementById('visitor-count').innerText = '---';
+    const counter = document.getElementById('visitor-count');
+
+    if(counter){
+      counter.textContent = '--';
+    }
   });
+
+})();
