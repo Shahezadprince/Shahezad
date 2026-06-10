@@ -1189,3 +1189,15 @@ body.light .footer { background: rgba(226, 232, 240, 0.6); }
   .photo-ring { animation: none; }
   .live-dot::after { animation: none; }
 }
+.visitor-counter{
+    text-align:center;
+    margin-bottom:15px;
+    font-size:16px;
+    font-weight:600;
+    color:#06B6D4;
+}
+
+#visitor-count{
+    color:#60A5FA;
+    font-weight:700;
+}
