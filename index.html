@@ -1,39 +1,97 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Shahezad Sayyad | Portfolio</title><link rel="stylesheet" href="style.css"></head>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shahezad Sayyad | Senior IT Support Engineer</title>
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
-<nav><div class="logo">SS</div>
-<div class="controls">
-<select id="lang"><option value="en">English</option><option value="hi">Hindi</option><option value="mr">Marathi</option></select>
-<button id="theme">🌙 Theme</button></div></nav>
+<nav class="nav">
+<div class="logo">SS</div>
+<button id="themeBtn">🌙 Theme</button>
+</nav>
 
 <header class="hero">
-<div class="left">
-<h1 id="name">Shahezad Sayyad Mohammad</h1>
-<h2 id="role"></h2>
-<p id="tag">7+ Years • Microsoft 365 • Active Directory • ServiceNow</p>
-<div class="btns">
+<div class="hero-text">
+<span class="badge">🟢 Open to Opportunities</span>
+<h1>Shahezad Sayyad Mohammad</h1>
+<h2>Senior IT Support Engineer | Microsoft 365 Administrator</h2>
+<p>Microsoft 365 • Active Directory • ServiceNow • Windows Server</p>
+
+<div class="actions">
 <div class="dropdown">
-<button class="primary">Download Resume ▼</button>
+<button class="btn">📄 Download Resume</button>
 <div class="menu">
 <a href="Shahezad_Resume.pdf">PDF Resume</a>
 <a href="Shahezad_Resume_ATS.docx">ATS Resume DOCX</a>
-</div></div>
-<a class="primary" href="mailto:shahezadsyed@gmail.com">Contact</a>
+</div>
+</div>
+<a class="btn" href="https://linkedin.com/in/shahezad-sayyad-106a8a10b" target="_blank">💼 LinkedIn</a>
+<a class="btn" href="mailto:shahezadsyed@gmail.com">📧 Contact</a>
 </div>
 </div>
 <img src="profile.png" class="photo">
 </header>
 
-<section class="glass"><h2 data-k="high">Professional Highlights</h2>
-<div class="stats"><div><b>7+</b><span>Years</span></div><div><b>5000+</b><span>Users</span></div><div><b>98%+</b><span>SLA</span></div><div><b>5</b><span>Companies</span></div></div></section>
+<section class="card stats">
+<div><h3>8+</h3><p>Years Experience</p></div>
+<div><h3>5000+</h3><p>Users Supported</p></div>
+<div><h3>98%+</h3><p>SLA Compliance</p></div>
+<div><h3>6</h3><p>Organizations</p></div>
+</section>
 
-<section class="glass"><h2 data-k="skills">Skills</h2><div class="chips">
-<span>Microsoft 365</span><span>Exchange Online</span><span>Active Directory</span><span>Entra ID</span><span>Windows Server</span><span>ServiceNow</span><span>Intune</span></div></section>
+<section class="card">
+<h2>Technical Skills</h2>
+<div class="chips">
+<span>Microsoft 365</span><span>Exchange Online</span><span>Teams</span><span>SharePoint</span>
+<span>Active Directory</span><span>Entra ID</span><span>Windows Server</span>
+<span>ServiceNow</span><span>SCCM</span><span>Intune</span>
+</div>
+</section>
 
-<section class="glass"><h2 data-k="timeline">Career Timeline</h2>
-<ul><li>TCS - IT Analyst</li><li>HCLTech - Technical Support Specialist</li><li>GXO Logistics - Technology Analyst</li><li>Capgemini - Senior Analyst</li><li>CTRLS Data Centre - Associate Engineer</li></ul></section>
+<section class="card">
+<h2>Professional Experience</h2>
+<ul class="timeline">
+<li><b>TCS</b> — IT Analyst (2025–Present)</li>
+<li><b>HCLTech</b> — Technical Support Specialist (2023–2024)</li>
+<li><b>GXO Logistics</b> — Technology Analyst (2022)</li>
+<li><b>Capgemini</b> — Senior Analyst (2019–2022)</li>
+<li><b>CTRLS Data Centre</b> — Associate Engineer (2018–2019)</li>
+<li><b>Reliance ResQ</b> — Security Systems Engineer (2017–2018)</li>
+</ul>
+</section>
 
-<section class="glass"><h2 data-k="contact">Contact</h2>
-<p>Email: shahezadsyed@gmail.com</p><p>Phone: +91 7058009896</p></section>
+<section class="card">
+<h2>Certifications</h2>
+<div class="certs">
+<div>ITIL v3 & v4</div>
+<div>MS-900</div>
+<div>CompTIA A+</div>
+<div>CompTIA Network+</div>
+</div>
+</section>
 
-<script src="script.js"></script></body></html>
+<section class="card">
+<h2>Projects & Labs</h2>
+<ul>
+<li>Active Directory User Management Lab</li>
+<li>Microsoft 365 Administration Lab</li>
+<li>Windows Server GPO Management Lab</li>
+<li>ServiceNow Incident Workflow</li>
+</ul>
+</section>
+
+<footer>
+<p>Made by Shahezad</p>
+<p>Available for Remote, Hybrid & Onsite Opportunities</p>
+<p>© 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+const b=document.getElementById('themeBtn');
+b.onclick=()=>{
+ document.body.classList.toggle('light');
+ localStorage.theme=document.body.classList.contains('light')?'light':'dark';
+};
+if(localStorage.theme==='light') document.body.classList.add('light');
+</script>
+</body></html>
