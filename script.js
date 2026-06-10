@@ -1,19 +1,50 @@
+/* filename: script.js */
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggleButton = document.getElementById('theme-toggle');
+    const rootBodyElement = document.body;
+    const activeThemePreference = localStorage.getItem('portfolio-ui-theme');
+    
+    if (activeThemePreference === 'light') {
+        rootBodyElement.classList.remove('dark-theme');
+        rootBodyElement.classList.add('light-theme');
+    } else {
+        rootBodyElement.classList.add('dark-theme');
+        rootBodyElement.classList.remove('light-theme');
+    }
 
-const roles=["Senior IT Support Engineer","Microsoft 365 Administrator","Active Directory Specialist","Infrastructure Support Engineer"];
-let r=0;setInterval(()=>{document.getElementById("role").textContent=roles[r++%roles.length]},1500);
+    themeToggleButton.addEventListener('click', () => {
+        if (rootBodyElement.classList.contains('dark-theme')) {
+            rootBodyElement.classList.remove('dark-theme');
+            rootBodyElement.classList.add('light-theme');
+            localStorage.setItem('portfolio-ui-theme', 'light');
+        } else {
+            rootBodyElement.classList.remove('light-theme');
+            rootBodyElement.classList.add('dark-theme');
+            localStorage.setItem('portfolio-ui-theme', 'dark');
+        }
+    });
 
-document.getElementById("theme").onclick=()=>{document.body.classList.toggle("light");localStorage.theme=document.body.classList.contains("light")?"light":"dark";};
-if(localStorage.theme==="light")document.body.classList.add("light");
+    const structuralSectionNodes = document.querySelectorAll('section[id], header[id]');
+    const globalNavLinkElements = document.querySelectorAll('.nav-link');
 
-const t={
-en:{high:"Professional Highlights",skills:"Skills",timeline:"Career Timeline",contact:"Contact"},
-hi:{high:"व्यावसायिक उपलब्धियां",skills:"कौशल",timeline:"करियर यात्रा",contact:"संपर्क"},
-mr:{high:"व्यावसायिक ठळक मुद्दे",skills:"कौशल्ये",timeline:"कारकीर्द प्रवास",contact:"संपर्क"}
-};
-document.getElementById("lang").onchange=e=>{
-let l=t[e.target.value];
-document.querySelector('[data-k="high"]').innerText=l.high;
-document.querySelector('[data-k="skills"]').innerText=l.skills;
-document.querySelector('[data-k="timeline"]').innerText=l.timeline;
-document.querySelector('[data-k="contact"]').innerText=l.contact;
-};
+    const evaluateActiveNavigationNode = () => {
+        const verticalScrollPosition = window.scrollY + 120;
+
+        structuralSectionNodes.forEach(currentNode => {
+            const nodeTopBound = currentNode.offsetTop;
+            const nodeBottomBound = nodeTopBound + currentNode.offsetHeight;
+            const nodeIdString = currentNode.getAttribute('id');
+
+            if (verticalScrollPosition >= nodeTopBound && verticalScrollPosition < nodeBottomBound) {
+                globalNavLinkElements.forEach(currentLink => {
+                    currentLink.classList.remove('active');
+                    if (currentLink.getAttribute('href') === `#${nodeIdString}`) {
+                        currentLink.classList.add('active');
+                    }
+                });
+            }
+        });
+    };
+
+    window.addEventListener('scroll', evaluateActiveNavigationNode);
+});
